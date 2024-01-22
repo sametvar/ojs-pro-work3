@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  font-family: system-ui;
+}
+
+/* navbar start */
+
+.title-font {
+  font-family: "Kanit", sans-serif;
+}
+.navbar {
+  padding: 18px 0px;
+  background-color: white;
+  box-shadow: 2px 1px 5px 0px rgba(199, 199, 199, 0.64);
+  -webkit-box-shadow: 2px 1px 5px 0px rgba(199, 199, 199, 0.64);
+  -moz-box-shadow: 2px 1px 5px 0px rgba(199, 199, 199, 0.64);
+}
+
+.navbar .navbar-toggler {
+  font-size: 12px;
+  color: black;
+  padding: 10px 12px;
+}
+
+.navbar .navbar-brand {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.collapse ul li a:hover {
+  border-bottom:3px solid #000000;
+}
+
+
+
+
+/* navbar end */
+
+/* hero section start*/
+/* hero section left start */
+.hero-section {
+  padding: 60px 0px;
+}
+
+.hero-section-title {
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 300;
+}
+
+.hero-section-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.hero-section .buttons {
+  margin-top: 44px;
+}
+
+.hero-section .buttons a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+/* hero section left end */
+
+/* hero section right start */
+.phone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.phone-container .phone-img {
+  height: 541px;
+  width: auto;
+  z-index: 20;
+}
+
+.phone-container .gradient-circle {
+  position: absolute;
+  left: calc(50%-200px);
+  top: 60px;
+  width: 400px;
+  height: 400px;
+  background: #fffbd5;
+  background: rgb(149,213,240);
+  background: radial-gradient(circle, rgba(149,213,240,1) 0%, rgba(148,187,233,1) 100%);
+
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.phone-container .fa-circle-dot {
+  position: absolute;
+  z-index: 10;
+  font-size: 30px;
+  top: 40px;
+  right: -80px;
+}
+.phone-container .fa-x {
+  position: absolute;
+  z-index: 20;
+  font-size: 30px;
+  bottom: -20px;
+  left: -60px;
+}
+.phone-container .icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .phone-container .phone-img {
+    width: 50%;
+    height: auto;
+    margin-top: 80px;
+  }
+
+ .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-section-title {
+    font-size: 50px;
+    line-height: 50px;
+    padding: 0 10%;
+  }
+
+  .hero-section-subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 10%;
+  }
+}
+
+/* hero section right end */
+/* hero section end */
+
+/* modal start */
+.modal-header {
+  background-image: linear-gradient(to right top, #01060d, #3b3d40, #757679, #b5b5b7, #f9f9f9);
+}
+/* modal end */
+
+/* section slogan start */
+.slogan {
+  background-image: url(/img/arka1.PNG);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.slogan p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500px;
+}
+
+.slogan img {
+  margin: 0 auto;
+  width: auto;
+  height: 50px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width768px) {
+  .slogan p {
+    width: 90%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+/* section slogan end */
+
+/* section features left start */
+.features {
+  padding: 60px 0;
+}
+
+.features .phone-container {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  margin-right: 140px;
+}
+
+.features .phone-container .gradient-circle {
+  left: unset;
+  right: 60px;
+  top: 120px;
+  width: 350px;
+  height: 350px;
+}
+
+.features .phone-container .fa-circle-dot {
+  top: unset;
+  right: unset;
+  right: 0;
+  left: -30px;
+  bottom: -60px;
+}
+.features .phone-container .fa-x {
+  left: unset;
+  right: unset;
+  top: -100px;
+  right: -160px;
+}
+/* section features left end */
+
+/* section features right start */
+.features-item i {
+  font-size:60px;
+  color: #95d5f0;
+}
+
+.features .features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.features .features-item h4 {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.features .features-item p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #666;
+}
+
+@media screen and (max-width:768px) {
+  .features-section-row {
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+/* section features right end */
+
+
+
+/* basic start */
+.basic {
+  background-color: #eee;
+  padding: 60px 0;
+}
+
+.basic-photo {
+  width: 100%;
+  border-radius: 100%;
+  height: auto;
+}
+
+.basic-title {
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 300;
+}
+
+.basic-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.basic-texts {
+padding-right: 160px;
+}
+
+@media (max-width:768px) {
+  
+  .basic-title {
+    font-size: 40px;
+    line-height: 40px;   
+  }
+  
+  .basic-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .basic-texts {
+  padding: 0 10%;
+  }
+
+  .basic-photo {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* basic end */
+
+
+
+/* section img start */
+.section-img {
+  padding: 220px 0;
+  background-image: url(/img/arka.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.section-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  op
+}
+
+
+.section-img .text {
+  font-size: 64px;
+  line-height: 80px;
+  color: #fff;
+}
+
+
+@media (max-width:768px) {
+  .section-img-content {
+   padding: 0 10%;
+  }
+  .section-img .text {
+    font-size: 34px;
+    line-height: 40px;
+    color: #fff;
+  }
+
+}
+
+
+
+/* section img end */
+
+
+ /* section cta start */
+.cta {
+  padding: 100px 0px;
+  background-image: linear-gradient(to right top, #01060d, #3b3d40, #757679, #b5b5b7, #f9f9f9);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.cta .buttons {
+  margin-top: 30px;
+}
+
+ /* section cta end */
+
+
+ /* footer start */
+ footer {
+  padding:40px 0;
+  background-color: #020000;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  line-height: 20px;
+ }
+
+ footer .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+ }
+ footer .list a {
+text-decoration: none;
+margin: 0 6px;
+color: #666;
+ }
+ /* footer end */
